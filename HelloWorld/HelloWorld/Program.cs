@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System;
 
 namespace HelloWorld
 {
@@ -12,19 +8,21 @@ namespace HelloWorld
         {
             byte number = 2;
             int count = 10;
-            float totalPrice = 20.95f;
+            float totalPrice = 25.95f;
             char character = 'A';
-            string name = "Leslie";
-            bool isWorking = true;
+            string name = "leslie";
+            bool isTrue = false;
             Console.WriteLine(number);
             Console.WriteLine(count);
             Console.WriteLine(totalPrice);
             Console.WriteLine(character);
             Console.WriteLine(name);
-            Console.WriteLine(isWorking);
+            Console.WriteLine(isTrue);
+            // template strings
             Console.WriteLine("{0} {1}", byte.MinValue, byte.MaxValue);
             Console.WriteLine("{0} {1}", float.MinValue, float.MaxValue);
-            Console.WriteLine("{0} {1}", int.MinValue, int.MaxValue);
+            const float Pi = 3.14f;
+            Console.WriteLine("{0} {1}", Pi, isTrue);
         }
     }
 }
